@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 712 294" width="712" height="294"
+     role="img" aria-label="asckaya@hello — neofetch output in a terminal window">
+  <style>
+    @keyframes blink { 0%, 52% { opacity: 1 } 53%, 100% { opacity: 0 } }
+    .cursor { animation: blink 1.1s steps(1, end) infinite; }
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+                   "DejaVu Sans Mono", "Liberation Mono", monospace;
+    }
+  </style>
+
+  <defs>
+    <clipPath id="win">
+      <rect x="0.5" y="0.5" width="711" height="293" rx="12" />
+    </clipPath>
+  </defs>
+
+  <!-- window body -->
+  <rect x="0.5" y="0.5" width="711" height="293" rx="12" fill="#1a1b26" />
+  <g clip-path="url(#win)">
+    <rect x="0.5" y="0.5" width="711" height="34" fill="#16161e" />
+  </g>
+  <line x1="0.5" y1="34.5" x2="711.5" y2="34.5" stroke="#2b2f45" stroke-width="1" />
+  <rect x="0.5" y="0.5" width="711" height="293" rx="12" fill="none" stroke="#343a55" stroke-width="1" />
+
+  <!-- traffic lights -->
+  <g>
+    <circle cx="20" cy="17" r="5.5" fill="#f7768e" />
+    <circle cx="38" cy="17" r="5.5" fill="#e0af68" />
+    <circle cx="56" cy="17" r="5.5" fill="#9ece6a" />
+  </g>
+  <text class="mono" x="356" y="21.5" text-anchor="middle" font-size="11.5" fill="#565f89">asckaya@hello — zsh</text>
+  <text class="mono" x="686" y="21.5" text-anchor="end" font-size="11" fill="#3b4261">80×24</text>
+
+  <!-- distro mark -->
+  <g transform="translate(45.2, 117.2) scale(0.78)">
+    <path d="M60 2 L116 118 L88 118 L60 58 L32 118 L4 118 Z" fill="#1793d1" />
+    <path d="M60 78 L74 108 L46 108 Z" fill="#0f6ea0" opacity="0.7" />
+  </g>
+
+  <!-- header + labelled rule -->
+  <text class="mono" x="186" y="74" font-size="14.5" font-weight="700" fill="#7aa2f7">asckaya@hello</text>
+  <rect class="cursor" x="304" y="62" width="9" height="16" rx="1.5" fill="#7aa2f7" />
+  <line x1="186" y1="86.5" x2="392" y2="86.5" stroke="#343a55" stroke-width="1" />
+
+  <!-- key / value columns: absolute x, so alignment never depends on the viewer's font -->
+  <g class="mono" font-size="13.5">
+    <text x="186" y="116" fill="#7dcfff">os</text>
+    <text x="260" y="116" fill="#c0caf5">Arch Linux x86_64</text>
+
+    <text x="186" y="139" fill="#7dcfff">shell</text>
+    <text x="260" y="139" fill="#c0caf5">zsh<tspan fill="#565f89"> · </tspan>neovim<tspan fill="#565f89"> · </tspan>tmux</text>
+
+    <text x="186" y="162" fill="#7dcfff">host</text>
+    <text x="260" y="162" fill="#c0caf5">Nanjing Univ. of Aeronautics &amp; Astronautics</text>
+
+    <text x="186" y="185" fill="#7dcfff">role</text>
+    <text x="260" y="185" fill="#c0caf5">M.S. Student</text>
+
+    <text x="186" y="208" fill="#7dcfff">focus</text>
+    <text x="260" y="208" fill="#c0caf5">LLM Multi-Agent Systems<tspan fill="#565f89"> · </tspan>Reasoning Optimization</text>
+
+    <text x="186" y="231" fill="#7dcfff">status</text>
+    <text x="260" y="231" fill="#9ece6a">open to research collaboration</text>
+  </g>
+
+  <!-- live prompt -->
+  <text class="mono" x="186" y="266" font-size="13.5">
+    <tspan fill="#9ece6a">asckaya</tspan><tspan fill="#565f89">@</tspan><tspan fill="#7aa2f7">hello</tspan><tspan fill="#565f89">:~$ </tspan>
+  </text>
+  <rect class="cursor" x="323" y="255" width="8" height="15" rx="1.5" fill="#9ece6a" />
+</svg>
